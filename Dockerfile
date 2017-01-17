@@ -7,7 +7,7 @@ RUN apt-get update -qq \
     && add-apt-repository -y ppa:ubuntu-toolchain-r/test \
     && add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)/" \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 \
-    && sudo add-apt-repository -y ppa:marutter/c2d4u  \
+    && add-apt-repository -y ppa:marutter/c2d4u  \
     && apt-get autoremove -qq \
     && apt-get update -qq \
     && apt-get install -y -qq \
